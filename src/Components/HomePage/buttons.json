@@ -1,0 +1,32 @@
+[
+  {
+    "NAME": "Compras",
+    "ROUTE": "/compras",
+    "ICON": "purchases.png"
+  },
+  {
+    "NAME": "Ventas",
+    "ROUTE": "/ventas",
+    "ICON": "rising.png"
+  },
+  {
+    "NAME": "Artículos",
+    "ROUTE": "/articulos",
+    "ICON": "bar-code.png"
+  },
+  {
+    "NAME": "Proveedores",
+    "ROUTE": "/proveedores",
+    "ICON": "delivery.png"
+  },
+  {
+    "NAME": "Presupuestos",
+    "ROUTE": "/presupuestos",
+    "ICON": "point-of-service.png"
+  },
+  {
+    "NAME": "Parámetros",
+    "ROUTE": "/parametros",
+    "ICON": "settings.png"
+  }
+]

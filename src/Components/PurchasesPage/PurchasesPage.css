@@ -1,0 +1,246 @@
+.PurchasePage__mainCont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-image: radial-gradient(120% 120% at 0 0, var(--color-7), var(--color-1));
+}
+
+.PurchasePage__purchasesSectionCont{
+  box-shadow: 0 0 8px #00000057;
+  background-color: #1616169a;
+  width: 95%;
+  height: 90%;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+}
+
+.PurchasePage__purchasesSectionTitle{
+  background-color: var(--color-4);
+  padding: 5px;
+  margin: 0;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+}
+
+.PurchasePage__bottomItems{
+  position: relative;
+  display: grid;
+  grid-template-rows: 50px 50px 1fr 40px;
+}
+
+/* ============================================== */
+
+.PurchasePage__registersItem{
+  color: white;
+  font-size: 1.5rem;
+  background-color: var(--color-1);
+  padding: 2px;
+  position: absolute;
+  right: 15px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+/* ============================================== */
+
+.PurchasesPage__textInputFilter{
+  border: none;
+  padding: 3px;
+  font-size: 1.5rem;
+}
+
+.PurchasesPage__textInputFilter:focus{
+  outline: none;
+}
+
+/* ============================================== */
+
+.PurchasePage__bottomItems{
+  padding: 5px;
+  height: 90%;
+}
+
+.PurchasePage__paginationCont{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.PurchasesPage__paginationButton{
+  background-color: var(--color-6);
+  font-size: 1.6rem;
+  border: none;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.PurchasesPage__paginationButton:focus{
+  outline: none;
+}
+
+.PurchasesPage__paginationButton:hover{
+  background-color: var(--color-8);
+}
+
+.PurchasesPage__paginationButton:focus,
+.PurchasesPage__paginationButton:active{
+  background-color: var(--color-9);
+}
+
+
+/* ============================================== */
+
+.PurchasePage__purchasesListCont{
+  background-color: #d8d8d8;
+  overflow: scroll;
+  height: 100%;
+  position: relative;
+}
+
+.PurchasePage__purchasesListHeader{
+  position: sticky;
+  top: -2px;
+}
+
+.PurchasesPage__tableSortButton,
+.PurchasesPage__tableSortButton-descending,
+.PurchasesPage__tableSortButton-ascending{
+  background-color: var(--color-6);
+  position: relative;
+  border: none;
+  height: 100%;
+  margin: 0;
+  padding: 5px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+}
+
+.PurchasesPage__tableSortButton:hover,
+.PurchasesPage__tableSortButton-descending:hover,
+.PurchasesPage__tableSortButton-ascending:hover{
+  background-color: var(--color-9);
+}
+
+.PurchasesPage__tableSortButton-descending::after,
+.PurchasesPage__tableSortButton-ascending::after{
+  content: '<';
+  background-color: var(--color-4);
+  padding: 1px;
+  border-radius: 50%;
+  font-weight: bold;
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  right: 5px;
+  display: block;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.PurchasesPage__tableSortButton-ascending::after{
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+
+.PurchasesPage__tableSortButton-descending::after{
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+
+.PurchasePage__purchasesListHeader,
+.PurchasePage__purchasesListRow{
+  font-size: 15px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  background-color: white;
+}
+
+.PurchasePage__purchasesListRow:nth-of-type(2n + 1){
+  background-color: var(--color-9);
+}
+
+.PurchasePage__purchasesListRow:hover{
+  background-color: var(--color-3);
+}
+
+.PurchasePage__purchasesListRow > div{
+  min-width: 100px;
+  padding: 2px;
+}
+
+.PurchasePage__purchasesListRow > div:not(:last-child){
+  border-right: 1px solid black;
+}
+
+.highlight{
+  background-color: #a8f591;
+}
+
+.PurchasesPage__listNoItemsMessage{
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.7rem;
+  justify-content: center;
+  height: 100%;
+}
+
+/* ======================================= */
+
+.PurchasesPage__yearsSectionCont{
+  width: 100%;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+  height: 100%;
+}
+
+.PurchasesPage__yearsSectionItem{
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: white;
+  border: none;
+}
+
+.PurchasesPage__yearsSectionItem:focus{
+  outline: none;
+  background-color: var(--color-2);
+}
+
+.PurchasesPage__yearsSectionItem:hover{
+  border-bottom: 2px solid var(--color-9);
+}
+
+.PurchasesPage__yearsSectionItem:active{
+  background-color: var(--color-7);
+}
